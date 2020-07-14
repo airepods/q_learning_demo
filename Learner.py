@@ -63,6 +63,7 @@ def run():
     time.sleep(1)
     alpha = 1
     t = 1
+    steps = 0
     while True:
         # Pick the right action
         s = World.player
@@ -77,8 +78,10 @@ def run():
         t += 1.0
         if World.has_restarted():
             World.restart_game()
-            time.sleep(0.01)
+            # waiting 2 seconds to restart the game
+            time.sleep(2)
             t = 1.0
+            print "Number of steps:",steps
 
         # Update the learning rate
         alpha = pow(t, -0.1)
