@@ -15,8 +15,8 @@ score = 1
 restart = False
 walk_reward = -0.04
 
-walls = [(1, 1), (1, 2), (2, 1), (2, 2)]
-specials = [(4, 1, "red", -1), (4, 0, "green", 1)]
+walls = [(1, 1), (1, 2), (2, 1), (4,4), (3,4)]
+specials = [(4, 1, "red", -1), (4, 0, "green", 1), (2, 2, "red", -1)]
 cell_scores = {}
 
 
